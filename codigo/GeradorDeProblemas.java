@@ -1,4 +1,5 @@
 package codigo;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -12,6 +13,7 @@ public class GeradorDeProblemas {
      * quantidade de rotas para um teste,
      * o tamanho do conjunto de testes (ou seja, quantos conjuntos de rotas daquele
      * tamanho serão gerados) e a dispersão.
+     * 
      * A dispersão deve ser dada em porcentagem e indica a diferença possível entre
      * a menor rota e a maior rota. Supõe-se
      * que conjuntos com dispersões diferentes possam gerar resultados com
@@ -26,10 +28,10 @@ public class GeradorDeProblemas {
      * @param dispersao   A dispersão do tamanho das rotas em %. Por exemplo, se a
      *                    dipersão for 0.50 (50%), as rotas geradas estarão
      *                    entre 13 e 20. Uma dispersão de 1.0 (100%) gera conjuntos
-     *                    de rotas entre 13
-     *                    e 26.
+     *                    de rotas entre 13 e 26.
+     *                    
      * @return Retorna uma lista de conjuntos de rotas. Cada conjunto de rotas é um
-     *         vetor de números inteiros.
+     * vetor de números inteiros.
      */
     public static List<int[]> geracaoDeRotas(int quantRotas, int tamConjunto, double dispersao) {
         List<int[]> conjuntoDeTeste = new ArrayList<>(tamConjunto);
